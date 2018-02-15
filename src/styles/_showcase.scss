@@ -1,0 +1,35 @@
+.showcase{
+  display: flex;
+  &__daily{
+    width:65%;
+    .item{
+      min-height:35vh;
+      display: inline-block;
+      width:50%;
+      padding:15px 15px 15px 60px;
+      p{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      p.black{
+        color: #000;
+      }
+    }
+    .item:last-child{
+      width:100%;
+    }
+  }
+  &__premium{
+    width:35%;
+    .item{
+      padding:15px;
+      height:100%;
+      p{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.services{
+  display: flex;
+  &__item{
+    display: flex;
+    padding: 100px;
+    text-align: center;
+    flex-direction: column;
+    width: 33%;
+    border-right: 1px solid #e8e8e8;
+    &:last-child{
+      border-right: none;
+    }
+    .icon{
+      i{
+        font-size: 52px;
+        color: $themecolor;
+      }
+    }
+    .caption{
+      color: #222;
+      font-size: 30px;
+      margin: 15px 0px;
+      font-weight: 700;
+    }
+    .info{
+      font-size: 16px;
+      color: #777777;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+
+ngx-carousel.banner{
+  position: relative;
+}
+
+ngx-item.item {
+  min-height:85vh;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  img{
+    position: absolute;
+    width:100%;
+    z-index: -1;
+    top:0;
+    left:0;
+    height:100%;
+  }
+  .content{
+    margin-left: 60px;
+    p{
+      color: #fff;
+      margin: 10px 0px;
+    }
+    p.maintext, p.price{
+      font-size: 60px;
+      text-transform: capitalize;
+    }
+    p.info{
+      font-size: 16px;
+    }
+  }
+}
+
+
+button.leftRs, button.rightRs {
+  position: absolute;
+  bottom: 40px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding:0;
+  color: $linkcolor;
+  i{
+    font-size: 50px;
+    vertical-align: middle;
+  }
+  &:active{
+    outline: none;
+  }
+
+}
+
+
+button.leftRs{
+  right: 2%;
+}
+
+button.rightRs{
+  right: 5%;
+}
+
+
+ul.ngxcarouselPoint {
+  position: absolute;
+  right: 7%;
+  bottom: 40px;
+  li{
+    background: #fff !important;
+    margin-right:15px  !important;
+  }
+  li.active{
+    transform: scale(1) !important;
+    background: $linkcolor !important;
+  }
+}

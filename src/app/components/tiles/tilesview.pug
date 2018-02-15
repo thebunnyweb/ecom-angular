@@ -1,0 +1,3 @@
+.tiles
+  .tiles__item(*ngFor="let item of tilesContent;let i = index")
+    a(href="{{item.link}}", [class.darker]="( i % 2 == 0 ) ? true : false" )

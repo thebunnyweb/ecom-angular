@@ -1,0 +1,43 @@
+header.header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height:77px;
+    .header__brand {
+
+    }
+    .header__nav {
+        width:70%;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left:30px;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+    }
+    .header__cta {
+      a{
+        display: inline-block;
+        margin-right:25px;
+        padding: 5px;
+        font-size: 18px;
+        &:hover{
+          i{
+            color: $linkcolor;
+            transition: all .3s ease;
+          }
+        }
+        i{
+          color: $themecolor;
+        }
+      }
+      a:last-child{
+        i{
+          color: #ddd;
+        }
+      }
+    }
+}

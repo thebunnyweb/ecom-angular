@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+@import "~normalize.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "variables";
+@import "legos";
+@import "buttons";
+@import "header";
+@import "carousel";
+@import "showcase";
+@import "tiles";
+@import "services";
+@import "footer";
+
+
+
+*{
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html{
+  min-height: 100vh;
+  min-width: 100vh;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,74 @@
+.btn-link{
+    display: block;
+    padding: 5px;
+    text-transform: uppercase;
+    color: $linkcolor;
+    transition: all .3s ease;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    &:hover{
+      color: $themecolor;
+      &:before{
+        width:40%;
+      }
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      display: block;
+      background: $themecolor;
+      transition: all .2s ease;
+      transition-delay: .2s;
+    }
+}
+
+
+.btn-default{
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+  color: $themecolor;
+  transition: all .3s ease;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  &:hover{
+    color: $linkcolor;
+    &:before{
+      width:40%;
+    }
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: $linkcolor;
+    transition: all .2s ease;
+    transition-delay: .2s;
+  }
+}
+
+
+.btn-cartaction{
+  margin-top:40px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  justify-content: center;
+  align-items: center;
+  i{
+    font-size: 42px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,28 @@
+<ngx-carousel [inputs]="carouselConfig">
+
+  <ngx-item NgxCarouselItem *ngFor="let item of carouselItems" [attr.data-bg]="item.image">
+    <img src="assets/{{item.image}}" [alt]="item.content">
+    <div class="content">
+      <p class="maintext">{{item.content}}</p>
+      <p class="price">{{item.price}}</p>
+      <p class="info">{{item.info}}</p>
+      <a href="#" class="btn-cartaction">
+        <i>
+            <fa name="shopping-cart"></fa>
+        </i>
+      </a>
+    </div>
+  </ngx-item>
+
+  <button NgxCarouselPrev class='leftRs'>
+    <i>
+      <fa name="angle-right"></fa>
+    </i>
+  </button>
+  <button NgxCarouselNext class='rightRs'>
+    <i>
+      <fa name="angle-left"></fa>
+    </i>
+
+  </button>
+</ngx-carousel>

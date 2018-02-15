@@ -1,0 +1,8 @@
+.services
+  .services__item(*ngFor="let item of servicesContent; let i = index")
+    .icon
+      i: fa(name="{{item.icon}}")
+    .caption
+      p {{item.caption}}
+    .info
+      p {{item.info}}
